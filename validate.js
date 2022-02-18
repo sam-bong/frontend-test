@@ -73,3 +73,5 @@ const doSomething = console.info;
 function handleError(err) {
     console.error(err);
 }
+
+module.exports = validate;
