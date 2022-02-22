@@ -73,7 +73,7 @@ module.exports = {
                                     }
                                 }
                             );
-}
+                        }
                         console.log("err register user ::::::::::::::::::", err, err.stack);
                     } // an error occurred
                     else {
@@ -81,35 +81,6 @@ module.exports = {
                         quicksight.getDashboardEmbedUrl({
                                 AwsAccountId: "XXXX5XXXXXX5",
                                 DashboardId: "XXXXX2X9-XXXX-4XX5-XXXX-XXXXX3ba90a9",
-                                IdentityType: "IAM",
-                                ResetDisabled: true,
-                                SessionLifetimeInMinutes: 400,
-                                UndoRedoDisabled: false
-                            },
-                            function (err, data) {
-                                if (!err) {
-                                    console.log(Date());
-                                    callback(data);
-                                } else {
-                                    console.log(err);
-                                    callback();
-                                }
-                            }
-                        );
-                    }
-                });
-            }
-        });
-    }
-}
-}
-                        console.log("err register user ::::::::::::::::::", err, err.stack);
-                    } // an error occurred
-                    else {
-                        // console.log("Register User :::::::::::::::: ", data1);
-                        quicksight.getDashboardEmbedUrl({
-                                AwsAccountId: "854359848205",
-                                DashboardId: "d3d6a645-74c7-49a3-9d64-06b12f2d9f74",
                                 IdentityType: "IAM",
                                 ResetDisabled: true,
                                 SessionLifetimeInMinutes: 400,
