@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 
 // User pool information
 const region = "ap-southeast-2";
-const poolId = "633ikse8kathsec9ksc6m1qpqr";
+const poolId = "ap-southeast-2_4uZMzCTgv";
 const issuer = "https://cognito-idp." + region + ".amazonaws.com/" + poolId;
 
 // When verifying, we expect to use RS256, and that our issuer is correct
